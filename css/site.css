@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #17223b;
+  overflow-x: hidden;
+}
+
+.navbar {
+  overflow: hidden;
+  padding: 1em;
+  color: whitesmoke;
+  background: linear-gradient(#0b1222, rgba(255, 0, 0, 0));
+}
+.navbar ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  padding: 10px;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+.navbar a:hover {
+  text-decoration: none;
+  background: #ffac41;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.carousel {
+}
+.carousel-item {
+  height: 100vh;
+  color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+}
+
+.item-desc {
+  position: absolute;
+  padding: 50px;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 50px;
+}
+
+.contact-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #632d88;
+  height: 100vh;
+  padding-top: 2.5em;
+}
+
+.form-wrapper {
+}
+.form-container {
+  width: 20em;
+  background: #a866d4;
+  border-radius: 15px;
+  margin-top: 2em;
+  width: max-content;
+  padding: 2.3em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.form-control {
+  border-radius: 18px;
+  margin-bottom: 10px;
+  width: 17em;
+}
+
+.btn {
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  background: #ffac41;
+}
+
+.btn:hover {
+  background: #eb9d38;
+}
+
+.contact-details {
+  color: azure;
+  padding-bottom: 2em;
+  margin-top: 2.5em;
+}
+
+.map {
+  width: 100vw;
+  height: 33vh;
+  bottom: -2em;
+}
+
+.phone-num {
+  color: azure;
+  text-decoration: underline;
+}
+
+.content {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  margin-top: -1.1em;
+  margin-left: -1.7em;
+}
+.social a {
+  padding: 0.5em;
+}
+.social i {
+  color: whitesmoke;
+  font-size: 2.5em;
+  height: 30px;
+  width: 30px;
+  padding: 0.5em;
+}
+.social i:hover {
+  color: #ffac41;
+}
+
+/*about us*/
+.about {
+  background: #274c77;
+}
+
+/*footer*/
+footer {
+  background-color: #632d88;
+  width: 100%;
+  height: 10px;
+}
+
+footer .art {
+  background-color: #17223b;
+  clip-path: polygon(0% 20%, 40% 0%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+footer .notice {
+  text-align: center;
+  color: whitesmoke;
+  padding: 1em;
+  font-size: 13px;
+}
+
+footer .notice a {
+  color: #ffac41;
+}
+
+/*Alisha dd (about us)*/
+.about-container {
+  position: relative;
+  z-index: 555;
+}
+.service-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  /* padding: 2em; */
+}
+.service {
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  bottom: 0;
+  box-shadow: 0 0 20px -15px black;
+  z-index: 1;
+  transition: transform 0.7s;
+  min-height: auto;
+  text-align: center;
+  margin: 3em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.service-logo1 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 10px solid rgb(174, 183, 236);
+  margin: -60px auto 0;
+  background: white;
+}
+
+.service-logo1 img {
+  width: 130px;
+  border-radius: 50%;
+  margin: -10px;
+  left: 60px;
+}
+
+.service-logo2 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 10px solid rgb(174, 183, 236);
+  margin: -60px auto 0;
+  background: white;
+}
+
+.service-logo2 img {
+  width: 120px;
+  border-radius: 50%;
+  margin: -5px;
+  margin-left: -15px;
+}
+
+.service-logo3 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 10px solid rgb(174, 183, 236);
+  margin: -60px auto 0;
+  background: white;
+}
+
+.service-logo3 img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.service h4 {
+  height: 35px;
+  width: 80%;
+  background: white;
+  margin: 1.5em auto;
+  position: relative;
+}
+
+.service h4::after {
+  content: "";
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, white, rgb(174, 183, 236));
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: -1;
+}
+
+.service h4::before {
+  content: "";
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, rgb(174, 183, 236), white);
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.service p {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 4em;
+}
+
+/* gallery */
+.gallery {
+  background: #392f5a;
+  padding: 1em;
+}
+
+.gh {
+  height: 5px;
+  width: 100px;
+  background: azure;
+  margin-top: -2.8em;
+  margin-left: 55em;
+  margin-bottom: 2em;
+}
+
+.gallery h1 {
+  margin-top: -1em;
+  letter-spacing: 1px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* scroll */
+.scroll-container,
+.scroll-area {
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.scroll-area:nth-of-type(1) {
+  background-color: antiquewhite;
+}
+
+.scroll-area:nth-of-type(2) {
+  background-color: whitesmoke;
+}
+
+.scroll-area:nth-of-type(3) {
+  background-color: rgb(165, 184, 160);
+}
+
+.scroll-area:nth-of-type(4) {
+  background-color: antiquewhite;
+}
+
+.scroll-area:nth-of-type(5) {
+  background-color: rgb(177, 206, 219);
+}
+
+#contact h2 {
+  color: aliceblue;
+  text-transform: capitalize;
+}
+
+.title .gh {
+  height: 5px;
+  width: 130px;
+  background: azure;
+  margin-top: -0.5em;
+  margin-left: 55em;
+  margin-bottom: 2em;
+}
